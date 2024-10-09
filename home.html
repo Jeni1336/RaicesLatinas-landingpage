@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raíces Latinas</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style/home.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="d-flex justify-content-between align-items-center p-3 bg-warning">
+        <div class="logo">
+            <img src="img/logoRL.png" alt="Logo Raíces Latinas" class="img-fluid" style="width: 60px;">
+        </div>
+        <h1 class="text-black">RAÍCES LATINAS</h1>
+        <div class="search-bar d-flex align-items-center">
+            <input type="text" id="search" class="form-control me-2" placeholder="Pesquisar...">
+            <button class="btn btn-dark" onclick="searchFunction()">🔍</button>
+        </div>
+    </header>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item"><a class="nav-link" href="#">Jornal</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Quem somos</a></li>
+                <li class="nav-item"><a class="nav-link" href="https://open.spotify.com/show/3d9mEX77oeech9Oigu3mtm">Nosso podcast</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Entre em contato</a></li>
+            </ul>
+            <div class="d-flex">
+                <img src="img/1-bandeira-da-espanha.png" alt="Espanha" class="img-fluid" style="width: 30px;">
+                <img src="img/bandeira-estados-unidos.png" alt="EUA" class="img-fluid ms-2" style="width: 30px;">
+                <img src="img/bandeira-br.png" alt="Brasil" class="img-fluid ms-2" style="width: 30px;">
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main content -->
+    <section class="container my-5">
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <div class="card">
+                    <img src="equipe-saude.jpg" class="card-img-top" alt="Equipes latino-americanas">
+                    <div class="card-body">
+                        <p class="card-text">Equipes latino-americanas desenvolvem tecnologias sociais para promoção da saúde</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="card">
+                    <img src="eleicao.jpg" class="card-img-top" alt="Votação">
+                    <div class="card-body">
+                        <p class="card-text">Domingo é dia de votação! Veja como é a votação na divisa do Brasil e como conseguir os documentos para votar!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>Princípios editoriais | Política de privacidade | <a href="#" class="text-white">Anuncie conosco</a></p>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script>
+        function searchFunction() {
+            const searchTerm = document.getElementById('search').value;
+            if (searchTerm) {
+                alert('Você pesquisou por: ' + searchTerm);
+            } else {
+                alert('Por favor, insira um termo de pesquisa.');
+            }
+        }
+    </script>
+</body>
+</html>
